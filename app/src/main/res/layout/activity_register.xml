@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView android:src="@drawable/beer_cake"
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="desc" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Heavenly Delights"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:fontFamily="cursive" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="REGISTER"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/mname2"
+                android:hint="Name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#ffffffff"
+                android:textColorHint="#ffffffff"
+                android:drawableStart="@drawable/mname2" />
+
+
+            <AutoCompleteTextView android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/mmail"
+                android:textColorHint="#ffffffff"
+                android:textColor="#ffffffff"
+                android:drawableStart="@drawable/mmail" />
+
+            <EditText android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:imeActionLabel="Login"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/mlock"
+                android:textColorHint="#ffffffff"
+                android:textColor="#ffffffff"
+                android:drawableStart="@drawable/mlock" />
+
+            <EditText android:id="@+id/etMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile No"
+                android:imeActionLabel="Login"
+                android:imeOptions="actionUnspecified"
+                android:inputType="number"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_baseline_phone_24"
+                android:textColorHint="#ffffffff"
+                android:textColor="#ffffffff"
+                android:drawableStart="@drawable/ic_baseline_phone_24" />
+
+            <EditText android:id="@+id/etAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:imeActionLabel="Login"
+                android:imeOptions="actionUnspecified"
+                android:inputType="number"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/mcacke"
+                android:textColorHint="#ffffffff"
+                android:textColor="#ffffffff"
+                android:drawableStart="@drawable/mcacke" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:background="#c6538c"
+                android:gravity="center"
+                android:text="Create Account"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/loginTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:autoLink="web"
+                android:gravity="center"
+                android:text="Already have an Account yet? Log In"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

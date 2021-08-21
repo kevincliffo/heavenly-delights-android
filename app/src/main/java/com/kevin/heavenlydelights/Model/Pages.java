@@ -11,7 +11,13 @@ public class Pages {
     private static final OrderObject [] flavours = {
             new OrderObject(R.drawable.red_velvet_cake, "Red Velvet", cakePrice),
             new OrderObject(R.drawable.chocolate_truffle, "Chocolate Truffle", cakePrice),
-            new OrderObject(R.drawable.cheescake_base, "Cheescake", cakePrice)
+            new OrderObject(R.drawable.cheescake_base, "Cheescake", cakePrice),
+            new OrderObject(R.drawable.vanilla_cake, "Vanilla Cake", cakePrice),
+            new OrderObject(R.drawable.black_forest, "Black Forest Cake", cakePrice),
+            new OrderObject(R.drawable.rainbow_themed_cake, "Rainbow Themed Cake", cakePrice),
+            new OrderObject(R.drawable.rich_chocolate, "Rich Chocolate Cake", cakePrice),
+            new OrderObject(R.drawable.strawberry_cake, "Strawberry Cake", cakePrice),
+            new OrderObject(R.drawable.white_forest, "White Forest Cake", cakePrice)
     };
     public static final OrderPage cakePage = new OrderPage("Step 1: Choose a Base Flavour"
             , flavours);
@@ -42,7 +48,8 @@ public class Pages {
             R.drawable.simran_birthday_cake,
             R.drawable.flower_cake,
             R.drawable.messi_theme_cake,
-            R.drawable.theme_christmas
+            R.drawable.theme_christmas,
+            R.drawable.vanilla_cake
     };
     private static final OrderObject [] weightObjects = {
             new OrderObject(R.drawable.button_bg, "0.5 Kg Cake - Ksh. 900", 900),
